@@ -1,0 +1,134 @@
+@media (max-width:992px){
+    nav{
+       
+
+    }
+    .allMenu{
+    }
+    .Menu{
+        display: none;
+    }
+
+    .Menu1{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        align-items: center;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-evenly;
+        height: 500px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        top: 70px;
+        margin-right: auto;
+        display: none;
+    }
+    .Menu1 li{
+        font-size: 1.0rem;
+        font-weight: 500;
+        color: #000;
+        display: block;
+    }
+    .Menu1 li a{
+        color: #000; 
+    }
+    .baron{
+        display: block; 
+    }
+    .baron1{
+       transition: 10s;
+        display: none;
+    }
+
+    .Menu li{
+        
+        
+    }
+    .navbutton{
+        width: 150px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    .navbutton i{
+        cursor: pointer;
+        display: block;
+        margin-right: 40px;
+    }
+
+    #Titlemain{
+        font-size: 2.8rem
+    }
+
+    .main2 {
+        height: auto;
+        width: 50%;
+
+    }
+
+
+
+    /* blog layer */
+    .Blogsec{
+        height: auto;
+
+    }
+    .blogmain{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        height: auto;
+    }
+    .blogdotall{
+        flex-wrap: wrap;
+    }
+    .Explore{
+        text-align: center;
+    }
+    .blog1{
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+    }
+
+    .sec4{
+        height: auto;
+
+    }
+
+
+    .sec5{
+        height: auto;
+    }
+
+    .sec5img{
+        flex-wrap: wrap;
+    }
+    .sec5img div{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    footer{
+        height: auto;
+    }
+    .footermain3{
+        height: auto;
+        margin-top: 30px;
+    }
+    .footermenu{
+        
+    }
+    .footermain2{
+        margin-top: auto;
+    }
+
+    .Copyright⭐{
+        margin-bottom: 40px;
+    }
+
+    
+}

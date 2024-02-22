@@ -1,0 +1,109 @@
+@media (max-width:767px){
+   section{
+      height: auto;
+   }
+   .fullmainn1{
+      margin-top: 80px;
+      height: auto;
+   }
+  
+   .maino1{
+      height: auto;
+      flex-wrap: wrap;
+   }
+   .mainp1{
+      margin-left: 10px;
+      height: auto;
+      width: 550px;
+      margin-right: 10px;
+   }
+  .mainv2{
+   margin-left: 10px;
+   height: auto;
+   width: 450px;
+   margin-right: 10px;
+  }
+
+  /* main page end */
+
+  .sec1{
+   height: auto;
+
+  }
+  .t1{
+   margin-top: 40px;
+   font-size: 3rem;
+   font-weight: 500;
+  }
+  .t1o{
+   font-size: 2rem;
+   font-weight: 300;
+
+  }
+  .t1o1{
+   margin-bottom: 40px;
+  }
+
+  /* end */
+
+  .sec2o{
+   height: auto;
+  }
+  .fullmain1{
+   margin-top: 20px;
+   height: auto;
+}
+
+  .mainfast{
+   height: auto;
+   flex-wrap: wrap;
+   display: flex;
+   
+  }
+ 
+  .main1o{
+   margin-top: 40px;
+   height: 45%;
+   width: 500px;
+  }
+  #img-fluid{
+   height: auto;
+   width: 450px;
+  }
+  .main2o{
+   margin-top: 120px;
+   height: 45%;
+   width: 500px;
+
+  }
+  .main3o{
+   height: auto;
+   width: 500px;
+   margin-bottom: 20px;
+  }
+  .main30o{
+   height: auto;
+   margin-top: 20px;
+  }
+
+  .boldtext{
+   font-size: 2.5rem;
+  }
+  .textpre{
+   font-size: 1.1rem;
+  }
+
+  .blogtitle p{
+   font-size: 2.9rem;
+  }
+
+  .sec4 div {
+   width: 80%;
+ }
+ .sec4 h1 {
+   font-size: 3.7rem;
+ }
+
+
+}
+    

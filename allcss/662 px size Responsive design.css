@@ -1,0 +1,50 @@
+@media (max-width:662px){
+  .footermain3{
+  }  
+  .footermenu{
+    flex-wrap: wrap;
+    justify-content: start;
+
+  }
+  .fmenu1{
+    width: 400px;
+  }
+  .fmenu2{
+    margin-top: 30px;
+    width: 400px;
+  }
+  .fmenu3{
+    width: 400px;
+    margin-top: 30px;
+    
+  }
+
+
+
+ 
+ 
+  .footermain1{
+    height: auto;
+  }
+  .footer5{
+    height: 100%;
+  }
+  .foottext1{
+    height: auto;
+  }
+
+  .footermain2 {
+    height: auto;
+    margin-top: auto;
+  }
+  .socialicon{
+    width: auto;
+    /* display: flex;
+    justify-content: center; */
+  }
+  .socialicon img{
+    width: 40px;
+  }
+
+
+}
