@@ -1,0 +1,35 @@
+name: ShotOps Safe Deploy
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  safe-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Test
+        run: test -f index.html
+      - name: Build
+        run: echo "Static site detected; no build step required"
+      - name: Trigger ShotOps Deployment
+        if: success()
+        env:
+          SHOTOPS_DEPLOY_WEBHOOK: ${{ secrets.SHOTOPS_DEPLOY_WEBHOOK }}
+          SHOTOPS_DEPLOY_TOKEN: ${{ secrets.SHOTOPS_DEPLOY_TOKEN }}
+        run: |
+          curl --fail --request POST "$SHOTOPS_DEPLOY_WEBHOOK" \
+            --header "Authorization: Bearer $SHOTOPS_DEPLOY_TOKEN" \
+            --header "Content-Type: application/json" \
+            --data '{
+              "commit": "${{ github.sha }}",
+              "branch": "${{ github.ref_name }}",
+              "repository": "${{ github.repository }}",
+              "run_id": "${{ github.run_id }}",
+              "run_url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            }'
